@@ -1,7 +1,7 @@
 FROM python:3.8-slim-buster
 RUN pip3 install flask
-RUN echo "py-user:x:76543:76543::/work:/bin/bash" >> /etc/passwd
-USER 76543
+RUN echo "py-user:x:96745:96745::/work:/bin/bash" >> /etc/passwd
+USER 96745
 WORKDIR /work
 COPY app.py .
 EXPOSE 5000
